@@ -33,11 +33,6 @@ public class ShooterSubsystem extends SubsystemBase implements UpdateManager.Upd
     public ShuffleboardTab music = Shuffleboard.getTab("Music");
 
 
-    public String rickroll = "rickroll";
-    public String gasgasgas = "gasgasgas";
-    public String pokerface = "pokerface";
-    public String stayinalive = "stayinalive";
-    
 
     
     private final NetworkTableEntry HoodAngleEntry;
@@ -82,11 +77,7 @@ public class ShooterSubsystem extends SubsystemBase implements UpdateManager.Upd
 
         ShooterFollower.follow(Shooter);// tells the follower motor to simply do whatever the master is doing 
         ShooterFollower.setInverted(InvertType.InvertMotorOutput); // inverts the follower, so that they spin in the same dirrection 
-        SongChooser.setDefaultOption("rick roll",rickroll);// falcons can play music, this is just some fun stuff, not particulaly relevant 
-        SongChooser.addOption("Gas Gas GAS!", gasgasgas);
-        SongChooser.addOption("PokerFace", pokerface);
-        SongChooser.addOption("Stayin Alive", stayinalive);
-        music.add(SongChooser);
+ 
 
         
 
